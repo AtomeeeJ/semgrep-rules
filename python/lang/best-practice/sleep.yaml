@@ -9,7 +9,7 @@ rules:
               time.sleep($X: float)
     message: time.sleep() call; did you mean to leave this in?
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: best-practice
       technology:
