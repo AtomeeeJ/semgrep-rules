@@ -5,7 +5,7 @@ rules:
       source_hash' is only available on Python 3.7+. This does not work in lower versions, and therefore is not backwards
       compatible. Instead, use another hash function.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -16,7 +16,7 @@ rules:
       Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in lower versions,
       and therefore is not backwards compatible. Use importlib_resources instead for older Python versions.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -27,7 +27,7 @@ rules:
       Found usage of the 'blocksize' argument in a HTTPConnection call. This is only available on Python 3.7+ and is
       therefore not backwards compatible. Remove this in order for this code to work in Python 3.6 and below.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -38,7 +38,7 @@ rules:
       Found usage of the 'blocksize' argument in a HTTPSConnection call. This is only available on Python 3.7+ and is
       therefore not backwards compatible. Remove this in order for this code to work in Python 3.6 and below.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -49,7 +49,7 @@ rules:
       Found usage of 'importlib.abc.ResourceReader'. This module is only available on Python 3.7+ and is therefore not
       backwards compatible. Instead, use another loader.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -60,7 +60,7 @@ rules:
       Found usage of 'importlib.abc.ResourceReader'. This module is only available on Python 3.7+ and is therefore not
       backwards compatible. Instead, use another loader.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -71,7 +71,7 @@ rules:
       IPv6Network.subnet_of is only available on Python 3.7+ and is therefore not backwards compatible. Instead, check
       if the subnet is in 'subnets'.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -82,7 +82,7 @@ rules:
       IPv6Network.supernet_of is only available on Python 3.7+ and is therefore not backwards compatible. Instead, check
       if the supernet is in 'supernet'.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -93,7 +93,7 @@ rules:
       IPv4Network.subnet_of is only available on Python 3.7+ and is therefore not backwards compatible. Instead, check
       if the subnet is in 'subnets'.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -104,7 +104,7 @@ rules:
       IPv4Network.supernet_of is only available on Python 3.7+ and is therefore not backwards compatible. Instead, check
       if the supernet is in 'supernet'.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -115,7 +115,7 @@ rules:
       Found usage of the 'monetary' argument in a function call of 'locale.format_string'. This is only available on
       Python 3.7+ and is therefore not backwards compatible. Instead, remove the 'monetary' argument.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -126,7 +126,7 @@ rules:
       math.remainder is only available on Python 3.7+ and is therefore not backwards compatible. Instead, use math.fmod()
       or calculate $X - n* $Y.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -137,7 +137,7 @@ rules:
       multiprocessing.Process.close() is only available on Python 3.7+ and is therefore not backwards compatible. Instead,
       use join().
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -148,7 +148,7 @@ rules:
       multiprocessing.Process.kill() is only available on Python 3.7+ and is therefore not backwards compatible. Instead,
       use terminate().
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -159,7 +159,7 @@ rules:
       os.preadv() is only available on Python 3.7+ and is therefore not backwards compatible. Instead, use a combination
       of os.readv() and os.pread().
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -174,7 +174,7 @@ rules:
       os.pwritev() is only available on Python 3.3+ and is therefore not backwards compatible. Instead, use a combination
       of pwrite() and writev().
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:
@@ -185,7 +185,7 @@ rules:
       pdb.set_trace() with the header argument is only available on Python 3.7+ and is therefore not backwards compatible.
       Instead, use set_trace() without the header argument.
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: compatibility
       technology:

@@ -88,7 +88,7 @@ rules:
           - pattern: $F = tempfile.SpooledTemporaryFile(...)
     message: file object opened without corresponding close
     languages: [python]
-    severity: ERROR
+    severity: WARNING
     metadata:
       category: best-practice
       technology:
